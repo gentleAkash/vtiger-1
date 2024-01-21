@@ -8,6 +8,7 @@ public static void main(String[] args) {
 	method3();
 	method4();
 	method5();
+	methodKundesh();
 	
 	
 }
@@ -29,6 +30,10 @@ public static void method4() {
 }
 public static void method5() {
 	System.out.println("i am method5");
+	
+}
+public static void methodKundesh() {
+	System.out.println("i am methodKundesh");
 	
 }
 }
