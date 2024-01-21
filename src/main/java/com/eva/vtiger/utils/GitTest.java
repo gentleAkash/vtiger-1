@@ -9,6 +9,7 @@ public static void main(String[] args) {
 	method4();
 	method5();
 	methodKundesh();
+	methodKundesh1();
 	
 	
 }
@@ -34,6 +35,10 @@ public static void method5() {
 }
 public static void methodKundesh() {
 	System.out.println("i am methodKundesh");
+	
+}
+public static void methodKundesh1() {
+	System.out.println("i am methodKundesh1");
 	
 }
 }
