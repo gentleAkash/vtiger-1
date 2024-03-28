@@ -22,6 +22,7 @@ public class CommonReusableCodesOr {
 	//     _______________ login ___________________
 
 	@CacheLookup
+	
 	@FindBy (xpath="//input[@name='user_name']")
 	private WebElement userNameTB;
 

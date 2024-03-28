@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T22:09:47 IST" name="Default suite" finished-at="2023-12-18T22:09:47 IST" duration-ms="74">
+  <suite started-at="2024-01-28T15:55:16 IST" name="Failed suite [Default suite]" finished-at="2024-01-28T15:55:16 IST" duration-ms="68">
     <groups>
     </groups>
-    <test started-at="2023-12-18T22:09:47 IST" name="Default test" finished-at="2023-12-18T22:09:47 IST" duration-ms="74">
+    <test started-at="2024-01-28T15:55:16 IST" name="Default test(failed)" finished-at="2024-01-28T15:55:16 IST" duration-ms="68">
       <class name="com.eva.vtiger.base.DataProviderConcept">
-        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:com.eva.vtiger.base.DataProviderConcept@4f6ee6e4]" started-at="2023-12-18T22:09:47 IST" name="testMethod" data-provider="TestData" finished-at="2023-12-18T22:09:47 IST" duration-ms="16" status="PASS">
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:com.eva.vtiger.base.DataProviderConcept@4f6ee6e4]" started-at="2024-01-28T15:55:16 IST" name="testMethod" data-provider="TestData" finished-at="2024-01-28T15:55:16 IST" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod -->
-        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:com.eva.vtiger.base.DataProviderConcept@4f6ee6e4]" started-at="2023-12-18T22:09:47 IST" name="testMethod" data-provider="TestData" finished-at="2023-12-18T22:09:47 IST" duration-ms="3" status="PASS">
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:com.eva.vtiger.base.DataProviderConcept@4f6ee6e4]" started-at="2024-01-28T15:55:16 IST" name="testMethod" data-provider="TestData" finished-at="2024-01-28T15:55:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,6 +40,6 @@
           </reporter-output>
         </test-method> <!-- testMethod -->
       </class> <!-- com.eva.vtiger.base.DataProviderConcept -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>

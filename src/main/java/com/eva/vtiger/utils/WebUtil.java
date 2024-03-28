@@ -49,10 +49,11 @@ import lombok.Setter;
 import net.bytebuddy.utility.RandomString;
 
 /**
- * @author Man Singh
+ * @author  Akash pal
  */
 @Getter
 @Setter
+
 public class WebUtil {
 	private WebDriver driver;
 

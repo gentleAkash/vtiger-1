@@ -20,6 +20,8 @@ import com.google.common.io.Files;
 public class ExtentReportsConcept {
 
 	public static void main(String[] args) {
+		
+		
 		ExtentReports extent = new ExtentReports();
 		ExtentSparkReporter spark = new ExtentSparkReporter("test-output/VtigerExtentReport.html");
 		extent.attachReporter(spark);

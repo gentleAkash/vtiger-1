@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.eva.vtiger.pages.common.CommonReusableCodes;
 import com.eva.vtiger.pages.commonOr.CommonReusableCodesOr;
 import com.eva.vtiger.utils.WebUtil;
 
@@ -20,16 +21,18 @@ import lombok.Getter;
 public class Base {
 
 	private WebUtil webUtil;
-	private CommonReusableCodesOr commnRuseCode;
+	private CommonReusableCodes commnRuseCode;
 
 	@BeforeGroups(groups = "Smoke")
 	public void beforeGroups() {
+		
 		System.out.println("beforeGroups");
-//		webUtil = WebUtil.getInstance();
-//		webUtil.launchBrowser("chrome"); // driver is initialized from here,
-//		webUtil.goToHitUrl("http://localhost:8888");
-//		commnCode = new CommonCodes(webUtil);
-//		commnCode.login();
+		
+		webUtil = WebUtil.getObject();
+		webUtil.launchBrowser("chrome"); // driver is initialized from here,
+		webUtil.goToHitUrl("http://localhost:8888");
+		commnRuseCode = new CommonReusableCodes(webUtil);
+		commnRuseCode.getLoginBT();
 	}
 
 	@BeforeSuite
@@ -42,16 +45,16 @@ public class Base {
 		System.out.println("Connect To The Data Base");
 	}
 
-	@Parameters({"browserName"})
+	@Parameters({ "browserName" })
 	@BeforeClass
 	public void beforeTestCases(String browserName) {
-	  System.out.println("before class- launch browser");	
-	
+		System.out.println("before class- launch browser");
+
 	}
 
-	@Parameters({"userName","password"})
+	@Parameters({ "userName", "password" })
 	@BeforeMethod
-	public void beforeMethod(String userName,String password) {
+	public void beforeMethod(String userName, String password) {
 		System.out.println("before testcase - Login");
 	}
 
